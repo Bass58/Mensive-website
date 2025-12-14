@@ -1,0 +1,88 @@
+/* ======================
+   FAQ / ACCORDION
+====================== */
+
+.accordion {
+    margin-top: 20px;
+}
+
+/* ITEM */
+.accordion-item {
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(10, 128, 238, 0.55);
+    transition: all 0.4s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 5px 5px 5px rgba(148, 137, 137, 0.55);
+}
+
+/* QUESTION */
+.accordion-item a {
+    display: block;
+    padding: 18px 22px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(2, 120, 150);
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+/* ICON + */
+.accordion-item a::after {
+    content: "+";
+    position: absolute;
+    right: 22px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.4s ease;
+}
+
+/* ACTIVE QUESTION */
+.accordion-item.active a {
+    background: rgb(2, 120, 150);
+    color: #fff;
+}
+
+/* ICON - */
+.accordion-item.active a::after {
+    content: "−";
+}
+
+/* ANSWER */
+.accordion-item .content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 22px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+    background: rgb(240, 240, 240);
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+/* SHOW ANSWER */
+.accordion-item.active .content {
+    max-height: 300px;
+    padding: 15px 22px 20px;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media screen and (max-width: 460px) {
+    .accordion-item a {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .accordion-item .content {
+        font-size: 13px;
+    }
+}

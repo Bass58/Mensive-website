@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy Mensive</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<script>
+    const items = document.querySelectorAll('.accordion-item a');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            item.parentElement.classList.toggle('active');
+        });
+    });
+</script>
+
+<body>
+    <!-- bagian header -->
+    <header>
+        <img src="images/Header-2.jpg" alt="header" width="950px" height="120px">
+        <h1 class="judul" >Happy Mensive</h1>
+        <p class="deskripsi">One month of us, after eight months of you</p>
+    </header>
+    <!-- akhir bagian header -->
+    
+    <div class="wrap">
+        <!-- bagian menu-->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="product.html">Moments</a>
+                </li>
+                <li>
+                    <a href="contact-us.html">About Us</a>
+                </li>
+                <li class="active">
+                    <a href="faq.html">Quotes</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- akhir bagian menu -->
+
+         <!-- bagian sidebar website -->
+<aside class="sidebar">
+    <div class="widget">
+        <div>
+            <img class="widget-pict" src="images/pict-sidebar1.jpeg" alt="pict" width="100%">
+        </div>
+        
+        <h2>Her</h2>
+        <p>Made This for You.</p>
+        <a href="https://nolanliley.carrd.co/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="faq-selengkapnya">
+           In Full
+        </a>
+    </div>
+
+    <div class="widget">
+        <div>
+            <img class="widget-pict" src="images/pict-sidebar2.jpeg" alt="pict" width="100%">
+        </div>
+        
+        <h2>Her - Again</h2>
+        <p>Little Things About Her.</p>
+        <a href="https://telegra.ph/Liley-12-14"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="faq-selengkapnya">
+           In Full
+        </a>
+    </div>
+</aside>
+<!-- akhir bagian sidebar website -->
+
+         <!-- bagian konten Blog -->
+        <div class="blog">
+            <div class="conteudo">
+                <section>
+
+                    <div class="title">
+                        It's Nolan
+                        <span>Happy mensive sayang<br />
+                            Maaf ya project nya telat, sedikit cerita sebenernya diawal bukan ngide bikin ginian. Aku mikirnya mau belajar editting video cuman waktunya ga kekejar haha, jadi aku geser coba buat web ginian. Maaf ya kalau masih ada yang kurang, kalau ada yang perlu ku baikin bilang aja ya, aku perlu masukkan dari kamu. Hope you like it, cantik.</span>
+
+                    </div>
+                    
+                    
+                </section>
+            </div>
+        </div>
+        <!-- akhir bagian konten Blog-->
+    </div>
+</body>
+
+</html>
